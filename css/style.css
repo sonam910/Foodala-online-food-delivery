@@ -1,0 +1,171 @@
+/*Css Reset*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+/*Navigation Bar:Logo and Image*/
+#logo{
+    margin:5px 34px;
+}
+#logo img{
+    margin:3px 6px;
+    height:59px;
+    /* width:50px;  */
+    
+}
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display:flex;
+}
+
+
+#navbar ul li {
+   
+    list-style: none;
+    font-size:1.3rem;
+
+}
+#navbar ul li a{
+color:white;
+display: block;
+padding: 3px 22px;
+border-radius: 20px;
+text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 530px;
+    justify-content: center;
+    align-items: center;
+}
+#home:before{
+    content: "";
+    background:url(../img/foodBg.jpeg) no-repeat center center/cover;
+    
+    position: absolute;
+    height: 70%;
+    width:100%;
+    z-index:-1;
+     top:0px;
+    left:0px;
+     opacity:0.89; 
+}
+#home h1{
+    color:white;
+    text-align: center;
+   
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Imperial Script', cursive;
+        font-family: 'Pushster', cursive;
+}
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border:2px solid grey;
+    padding: 34px;
+    border-radius: 28px;
+    background: rgb(187, 221, 190);
+}
+  
+#services .box img{
+    height:200px;
+    display: block;
+    margin: auto;
+
+}
+/* client-section */
+#client-section{
+    /* position: relative; */
+    /* height:344px; */
+}
+#client-section::before{
+    content: "";
+    background:url("../img/foodBg3.jpeg") no-repeat center center/cover;
+    position: absolute;
+    height: 54%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding:34px;
+
+}
+#clients img{
+ height: 100px;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    
+
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Imperial Script', cursive;
+
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: #7c7e65;
+    color:white;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin:17px;
+    cursor: pointer;
+}
+
+    
+    
+    
+   
